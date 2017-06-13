@@ -302,7 +302,7 @@ function moneyTrain(speed){
   }else if(speed < 100){
     return "You are riding an Amtrak.";
   }else{
-    return "Now you ballin' in the Shinkansen!"
+    return "Now you ballin' in the Shinkansen!";
   }
 }
 
