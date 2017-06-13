@@ -275,14 +275,14 @@ console.log(daClub(21, 21));
 */ 
 
 function graduation(credits, thesis){
-  if(credits >= 120 || thesis >= 120){
+  if(credits >= 120 || thesis === true){
     return "Congratulations on a job well done.";
   }else{
     return "See you in summer school.";
   }
 }
 
-console.log(graduation(125, 100));
+console.log(graduation(125, true));
 
 /*
  * #13
@@ -297,14 +297,16 @@ console.log(graduation(125, 100));
 */ 
 
 function moneyTrain(speed){
-  if(moneyTrain < 50){
+  if(speed < 50){
     return "You are riding Honolulu's Rail.";
-  }else{
+  }else if(speed < 100){
     return "You are riding an Amtrak.";
+  }else{
+    return "Now you ballin' in the Shinkansen!"
   }
 }
 
-console.log(moneyTrain(45));
+console.log(moneyTrain(100));
 
 /*
  * #14
@@ -320,9 +322,21 @@ console.log(moneyTrain(45));
  * Console.log budget and doughnutBought again.
 */ 
 
+var budget = 25
+var doughnutPrice = 5
+var doughnutBought = 0
 
+function buyDoughnut(){
+  if(budget >= doughnutPrice){
+    budget -= doughnutPrice;
+    doughnutBought++;
+  }
+}
 
-
+buyDoughnut();
+console.log(budget, doughnutBought);
+buyDoughnut();
+console.log(budget, doughnutBought);
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
