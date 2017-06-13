@@ -32,8 +32,6 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
 function canVote(age){
   if(age >= 18){
     return true;
-  }else{
-    return false;
   }
 }
 console.log(canVote(20));
@@ -92,7 +90,7 @@ console.log(isGreaterThan(5, 4));
 */
 
 function mustBeTrue(boo){
-  if(boo = "true"){
+  if(boo === true){
     return true;
   }else{
     return false;
@@ -322,9 +320,9 @@ console.log(moneyTrain(100));
  * Console.log budget and doughnutBought again.
 */ 
 
-var budget = 25
-var doughnutPrice = 5
-var doughnutBought = 0
+var budget = 25;
+var doughnutPrice = 5;
+var doughnutBought = 0;
 
 function buyDoughnut(){
   if(budget >= doughnutPrice){
