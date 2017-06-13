@@ -180,7 +180,15 @@ console.log(notEqual("justin", "timberlake"));
  * Console.log your result.
 */ 
 
+function spareChange(money){
+  if(money >= 100){
+    return true;
+  }else{
+    return false;
+  }
+}
 
+console.log(spareChange(99));
 
 /*
  * #9
@@ -196,7 +204,16 @@ console.log(notEqual("justin", "timberlake"));
  * Console.log your result.
 */ 
 
+function dirty30(one, two, three){
+var sum = one + two + three;
+if(sum > 30){
+  return true;
+}else{
+  return false;
+}
+}
 
+console.log(dirty30(10, 20, 30));
 
 /*
  * #10
@@ -210,8 +227,15 @@ console.log(notEqual("justin", "timberlake"));
  * Console.log your result.
 */ 
 
+function evenStevens(num){
+  if(num%2 === 0){
+    return true;
+  }else{
+    return false;
+  }
+}
 
-
+console.log(evenStevens(6));
 
 /*
  * #11
@@ -225,6 +249,16 @@ console.log(notEqual("justin", "timberlake"));
  * If BOTH values are 21 or over, the function will return the message: "Welcome to the Legends Lounge." Otherwise, it will return the message: "Chuck E Cheese is across the street."
  * Console.log your result.
 */ 
+
+function daClub(cover, age){
+  if(cover >= 21 && age >= 21){
+    return "Welcome to the Legends Lounge.";
+  }else{
+    return "Chuck E Cheese is across the street.";
+  }
+}
+
+console.log(daClub(21, 21));
 
 
 /*
@@ -240,7 +274,15 @@ console.log(notEqual("justin", "timberlake"));
  * Console.log your result.
 */ 
 
+function graduation(credits, thesis){
+  if(credits >= 120 || thesis >= 120){
+    return "Congratulations on a job well done.";
+  }else{
+    return "See you in summer school.";
+  }
+}
 
+console.log(graduation(125, 100));
 
 /*
  * #13
