@@ -32,6 +32,8 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
 function canVote(age){
   if(age >= 18){
     return true;
+  }else{
+    return false;
   }
 }
 console.log(canVote(20));
@@ -75,7 +77,7 @@ function isGreaterThan(first, second){
     return false;
   }
 }
-console.log(isGreaterThan(4,5));
+console.log(isGreaterThan(5, 4));
 
 /*
  * #4
@@ -111,7 +113,14 @@ console.log(mustBeTrue("true"));
  * Console.log your result.
 */
 
+function bigBird(word){
+  if(word.length === 3){
+    return "Word to Big Bird!";
+  }else{
+  }
+}
 
+console.log(bigBird("two"));
 
 /*
  * #6
@@ -126,6 +135,15 @@ console.log(mustBeTrue("true"));
  * Console.log your result.
 */
 
+function isEqual(first, second){
+  if(first === second ){
+    return "You look mahvelous!";
+  }else{
+    return "I don't know who you are anymore.";
+  }
+}
+
+console.log(isEqual("limber", "limber"));
 
 /*
  * #7
@@ -140,6 +158,15 @@ console.log(mustBeTrue("true"));
  * Console.log your result.
 */
 
+function notEqual (first, second){
+  if(first !== second){
+    return "Opposites do attract.";
+  }else{
+    return "Cause it's like you're my mirror.";
+  }
+}
+
+console.log(notEqual("justin", "timberlake"));
 
 /*
  * #8
